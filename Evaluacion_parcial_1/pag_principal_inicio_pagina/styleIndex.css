@@ -1,0 +1,13 @@
+.icono {
+  background-color: rgb(208, 208, 255);
+  
+  /* Posicionamiento en la esquina superior izquierda */
+  position: fixed;   /* Cambia a 'absolute' si no quieres que te siga al bajar la página */
+  top: 20px;         /* Separación del borde superior */
+  left: 20px;        /* Separación del borde izquierdo */
+  
+  /* Estilos para que resalte */
+  z-index: 9999;     /* Lo mantiene por encima del resto del contenido */
+  padding: 10px;     /* Espacio interno */
+  border-radius: 8px; /* Bordes ligeramente redondeados (opcional) */
+}
