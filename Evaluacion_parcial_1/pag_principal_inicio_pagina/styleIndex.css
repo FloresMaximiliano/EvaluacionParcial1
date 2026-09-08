@@ -1,13 +1,54 @@
 .icono {
-  background-color: rgb(208, 208, 255);
+  background-color: rgb(255, 216, 242);
   
   /* Posicionamiento en la esquina superior izquierda */
-  position: fixed;   /* Cambia a 'absolute' si no quieres que te siga al bajar la página */
+  
   top: 20px;         /* Separación del borde superior */
   left: 20px;        /* Separación del borde izquierdo */
   
   /* Estilos para que resalte */
   z-index: 9999;     /* Lo mantiene por encima del resto del contenido */
   padding: 10px;     /* Espacio interno */
-  border-radius: 8px; /* Bordes ligeramente redondeados (opcional) */
+  border-radius: 9px; /* Bordes ligeramente redondeados (opcional) */
+}
+
+/* Contenedor principal de la navegación */
+nav {
+  background-color: rgb(190, 204, 252); /* Un tono lavanda más claro para el fondo general */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between; /* Separa el logo/título de las opciones */
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+}
+
+/* Lista de opciones */
+nav ul {
+  list-style: none; /* Quita los puntitos de la lista */
+  display: flex;
+  gap: 15px; /* Espacio uniforme entre las opciones */
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo individual para cada opción/enlace */
+nav ul li a {
+  text-decoration: none;
+  color: #333366; /* Texto morado oscuro para buen contraste */
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease; /* Suaviza la animación del hover */
+}
+
+/* Efecto cuando el usuario pasa el mouse por encima (Hover) */
+nav ul li a:hover {
+  background-color: rgb(208, 208, 255); /* El lavanda original de tu icono */
+  color: #000000;
+}
+
+/* Opción activa (la página en la que está el usuario actualmente) */
+nav ul li a.active {
+  background-color: rgb(180, 180, 255); /* Un lavanda un poco más intenso */
+  color: #ffffff;
 }
