@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextilChile</title>
+        <link rel="stylesheet" href="styleIndex.css">
+        
+</head>
+<body>
+
+
+    <header>
+        <nav>              <!--nav-->
+            <div class="icono">TextilChile</div>
+            <ul>
+                <li><a href="#" class="active">Inicio</a></li>
+                <li><a href="#"> Ayuda </a></li>
+                <li><a href="#">Mi Perfil</a></li>
+                <li><a href="#">Cerrar sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <h2> Bienvenido a TextilChile</h2>
+        <p>Nos dedicamos a las Auditorias textiles en margenes de calidad y trazabilidad</p>
+
+        <form id="formulario_inspeccion_producto">
+            <div class="formulario_div">
+                <label for="producto">Producto:</label>
+                    <select name="producto" id="producto" required>
+                        <option value=""> Seleccione un producto </option>
+                        <option value="PR001">PR001 - Tela de algodón 100%</option>
+                        <option value="PR003">PR003 - Polera básica</option>
+                    </select>
+            </div>
+
+            <div class="formulario_div">
+                <label for="estado"> Estado Actual:</label>
+                <input type="text", id="estado" , name="estado",value="En Inspeccion" readonly class="campo-bloqueado">
+            </div>
+
+            <div id="parametros-productos" class="seccion-parametros">
+                    <div class="parametro-item">
+                        <label>Gramaje (Rango: 150 - 200 g/m²)</label>
+                        <input type="number" placeholder="Ingrese valor medido" class="input-medicion">
+                    </div>
+            </div>
+
+            <button class= "btn_inspeccion" type="submit"> Iniciar Inspeccion</button>
+        </form>
+    </main>
+
+    <!--Copirigyth-->
+    <footer>
+        <h2> sobre Nosotros</h2>
+        <p>TextilChile es una fábrica textil con más de 25 años de experiencia en la producción de telas y prendas de vestir. Fue fundada en 1998 y opera en la comuna de San Bernardo, Región Metropolitana, con una planta de 10,000 m².</p>
+        <p>&copy; 2026 TextilChile</p>
+    </footer>
+    
+</body>
+    <script src="ScriptIndex.js"></script>
+</html>

@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9; /* Fondo gris claro industrial, muy limpio */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* --- NAVEGACIÓN --- */
+nav {
+  background-color: #1e293b; /* Azul oscuro elegante para entorno corporativo/industrial */
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.icono {
+  background-color: #3b82f6; /* Azul brillante llamativo */
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #cbd5e1;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+nav ul li a:hover {
+  background-color: #334155;
+  color: #ffffff;
+}
+
+nav ul li a.active {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+/* --- CONTENIDO PRINCIPAL (OPTIMIZADO PARA TABLET) --- */
+.main-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+.card-form {
+  background: white;
+  width: 100%;
+  max-width: 600px; /* Tamaño perfecto para visualización en tablet */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+}
+
+.card-form h2 {
+  color: #1e293b;
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+}
+
+.card-form p {
+  color: #64748b;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+/* --- FORMULARIO Y CONTROLES TÁCTILES --- */
+.formulario_div {
+  margin-bottom: 20px;
+}
+
+.formulario_div label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #475569;
+}
+
+/* Inputs y Selects grandes y cómodos para tocar con dedos/tablet */
+.formulario_div select, 
+.formulario_div input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: border-color 0.2s;
+}
+
+.formulario_div select:focus, 
+.formulario_div input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.campo-bloqueado {
+  background-color: #f1f5f9 !important;
+  color: #64748b;
+  font-weight: bold;
+  cursor: not-allowed;
+}
+
+/* --- SECCIÓN DE PARÁMETROS DINÁMICOS --- */
+.seccion-parametros {
+  background-color: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.parametro-item {
+  margin-bottom: 10px;
+}
+
+.parametro-item label {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.input-medicion {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+/* --- BOTÓN PRINCIPAL --- */
+.btn-principal {
+  width: 100%;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 16px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+}
+
+.btn-principal:hover {
+  background-color: #1d4ed8;
+}
+
+/* --- FOOTER --- */
+footer {
+  background-color: #0f172a;
+  color: #94a3b8;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer h2 {
+  color: #f1f5f9;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+footer p {
+  max-width: 700px;
+  margin: 0 auto 10px auto;
+  line-height: 1.5;
+}
+
+
+/* --- CONTENEDOR PRINCIPAL Y TARJETA CENTRADA --- */
+.main-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+.card-form {
+  background: white;
+  width: 100%;
+  max-width: 550px;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  text-align: center; /* Centra los títulos y textos descriptivos */
+}
+
+.card-form h2 {
+  color: #1e293b;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+.card-form p {
+  color: #64748b;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+}
+
+/* --- CAMPOS DE OPERACIÓN CENTRADOS --- */
+.formulario_div {
+  margin-bottom: 22px;
+  text-align: left; /* Mantiene la etiqueta alineada a la izquierda del campo para mayor claridad visual */
+}
+
+.formulario_div label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+/* Inputs y Selects perfectamente alineados y con buen espacio táctil */
+.formulario_div select, 
+.formulario_div input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #fafafa;
+  transition: all 0.2s ease;
+  text-align: center; /* Centra el texto seleccionado o escrito dentro del input/select */
+}
+
+.formulario_div select:focus, 
+.formulario_div input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
+}
+
+.campo-bloqueado {
+  background-color: #f1f5f9 !important;
+  color: #64748b;
+  font-weight: bold;
+  cursor: not-allowed;
+}
+
+/* --- SECCIÓN DE PARÁMETROS DINÁMICOS --- */
+.seccion-parametros {
+  background-color: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.parametro-item label {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.input-medicion {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* --- BOTÓN PRINCIPAL CENTRADO Y LLAMATIVO --- */
+.btn_inspeccion {
+  width: 100%;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 16px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.btn_inspeccion:hover {
+  background-color: #1d4ed8;
+}
+
+.btn_inspeccion:active {
+  transform: scale(0.98);
+}
