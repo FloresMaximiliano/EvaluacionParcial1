@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Supervisor - TextilChile</title>
+
+    <link rel="stylesheet" href="supervisor.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="sup-logo">TextilChile</div>
+
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Mi Perfil</a></li>
+                <li><a href="#">Cerrar sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <h1>Supervisor de Linea</h1>
+
+        <p>Consulta de resultados de calidad de lotes</p>
+
+
+        <section class="sup-consulta">
+
+            <h2>Buscar lote</h2>
+
+            <form id="sup-formulario">
+
+                <div class="sup-campo">
+
+                    <label for="sup-lote">
+                        Codigo del lote:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="sup-lote"
+                        name="sup-lote"
+                        placeholder="Ej: LOT-001"
+                    >
+
+                    <small id="sup-error-lote"></small>
+
+                </div>
+
+
+                <div class="sup-campo">
+
+                    <label for="sup-linea">
+                        Linea de produccion:
+                    </label>
+
+                    <select id="sup-linea" name="sup-linea">
+
+                        <option value="">
+                            Seleccione una linea
+                        </option>
+
+                        <option value="linea1">
+                            Linea 1
+                        </option>
+
+                        <option value="linea2">
+                            Linea 2
+                        </option>
+
+                        <option value="linea3">
+                            Linea 3
+                        </option>
+
+                    </select>
+
+                    <small id="sup-error-linea"></small>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    id="sup-boton-buscar"
+                >
+                    Buscar lote
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <section
+            id="sup-resultado"
+            class="sup-resultado"
+        >
+
+            <h2>Resultado del lote</h2>
+
+            <p>
+                <strong>Codigo:</strong>
+                <span id="sup-resultado-codigo"></span>
+            </p>
+
+            <p>
+                <strong>Linea:</strong>
+                <span id="sup-resultado-linea"></span>
+            </p>
+
+            <p>
+                <strong>Estado de calidad:</strong>
+                Aprobado
+            </p>
+
+            <p>
+                <strong>Resultado:</strong>
+                Dentro de los parametros establecidos
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            TextilChile - Control de Calidad
+        </p>
+
+        <p>
+            &copy; 2026 TextilChile
+        </p>
+
+    </footer>
+
+
+    <script src="supervisor.js"></script>
+
+</body>
+
+</html>

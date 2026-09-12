@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #1f3c5b;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.sup-logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.sup-consulta {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.sup-campo {
+    margin-bottom: 20px;
+}
+
+.sup-campo label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.sup-campo input,
+.sup-campo select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#sup-boton-buscar {
+    padding: 10px 20px;
+    background-color: #1f3c5b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sup-boton-buscar:hover {
+    background-color: #2d5278;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+#sup-error-lote,
+#sup-error-linea {
+    color: red;
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.sup-resultado {
+    display: none;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
