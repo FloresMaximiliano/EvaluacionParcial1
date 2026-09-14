@@ -9,57 +9,76 @@
 </head>
 <body>
 
-
     <header>
-        <nav>              <!--nav-->
-            <div class="icono">TextilChile</div>
+        <nav>
+            <div class="icono">
+                <img src="../imagenes/Logo.jpg" alt="Logo TextilChile" class="logo-img">
+                TextilChile
+            </div>
             <ul>
-                <li><a href="#" class="active">Inicio</a></li>
-                <li><a href="#"> Ayuda </a></li>
-                <li><a href="#">Mi Perfil</a></li>
-                <li><a href="#">Cerrar sesion</a></li>
+                
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="../ayuda/ayuda.html">Ayuda</a></li>
+                <li><a href="perfil.html">Mi Perfil</a></li>
+                <li><a href="login.html">Cerrar sesión</a></li>
             </ul>
         </nav>
     </header>
 
-    
     <main>
-        <h2> Bienvenido a TextilChile</h2>
-        <p>Nos dedicamos a las Auditorias textiles en margenes de calidad y trazabilidad</p>
+        <section class="bienvenida">
+            <h2>Bienvenido a TextilChile</h2>
+            <p>Nos dedicamos a las Auditorías textiles en márgenes de calidad y trazabilidad.</p>
+            
+           
+            <img src="https://www.qima.es/assets/0c6y4qslwvqw/2lP4SdEZPWW5NKZP3iWEQt/e49ca9f9c80525eddb5a3da711889280/shutterstock_165424427-Textiles.png?fm=jpg&q=80&w=1920&fp=16%3A9%2C0.0817%2C0.0490%2C0.9174%2Cl&sv=3" alt="Inspección textil en planta" class="banner-img">
+        </section>
 
         <form id="formulario_inspeccion_producto">
             <div class="formulario_div">
                 <label for="producto">Producto:</label>
-                    <select name="producto" id="producto" required>
-                        <option value=""> Seleccione un producto </option>
-                        <option value="PR001">PR001 - Tela de algodón 100%</option>
-                        <option value="PR003">PR003 - Polera básica</option>
-                    </select>
+                <select name="producto" id="producto" required>
+                    <option value="">Seleccione un producto</option>
+                    <option value="PR001">PR001 - Tela de algodón 100%</option>
+                    <option value="PR003">PR003 - Polera básica</option>
+                </select>
             </div>
 
             <div class="formulario_div">
-                <label for="estado"> Estado Actual:</label>
-                <input type="text", id="estado" , name="estado",value="En Inspeccion" readonly class="campo-bloqueado">
+                <label for="estado">Estado Actual:</label>
+                <input type="text" id="estado" name="estado" value="En Inspección" readonly class="campo-bloqueado" autocomplete="off">
             </div>
 
             <div id="parametros-productos" class="seccion-parametros">
-                    <div class="parametro-item">
-                        <label>Gramaje (Rango: 150 - 200 g/m²)</label>
-                        <input type="number" placeholder="Ingrese valor medido" class="input-medicion">
-                    </div>
+                <div class="parametro-item">
+                    <label for="gramaje-default">Gramaje (Rango: 150 - 200 g/m²)</label>
+                    <input type="number" id="gramaje-default" placeholder="Ingrese valor medido" class="input-medicion" autocomplete="off">
+                </div>
             </div>
 
-            <button class= "btn_inspeccion" type="submit"> Iniciar Inspeccion</button>
+            <button class="btn_inspeccion" type="submit">Iniciar Inspección</button>
         </form>
+
+        <!-- <section class="seccion-video">
+            <h3>Proceso de Auditoría de Calidad</h3>
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" 
+                title="Proceso de Inspección Textil" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </section> -->
     </main>
 
-    <!--Copirigyth-->
     <footer>
-        <h2> sobre Nosotros</h2>
+        <h2>Sobre Nosotros</h2>
         <p>TextilChile es una fábrica textil con más de 25 años de experiencia en la producción de telas y prendas de vestir. Fue fundada en 1998 y opera en la comuna de San Bernardo, Región Metropolitana, con una planta de 10,000 m².</p>
         <p>&copy; 2026 TextilChile</p>
     </footer>
-    
-</body>
+
     <script src="ScriptIndex.js"></script>
+</body>
 </html>

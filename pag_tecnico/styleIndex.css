@@ -23,13 +23,20 @@ nav {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
+/* Contenedor del logo (imagen + texto) */
 .icono {
-  background-color: #3b82f6; /* Azul brillante llamativo */
-  color: white;
-  font-weight: bold;
-  font-size: 1.1rem;
-  padding: 8px 14px;
-  border-radius: 6px;
+    display: flex;
+    align-items: center; /* Centra la imagen y el texto verticalmente */
+    gap: 10px;           /* Separación entre la imagen y el texto */
+    font-size: 1.2rem;   /* Tamaño del texto del logo */
+    font-weight: bold;
+    color: #333;         /* Ajusta el color según el diseño de tu header */
+}
+/* Estilo para la imagen del logo */
+.logo-img {
+    height: 35px;        /* Controla la altura del logo para que no deforme el nav */
+    width: auto;         /* Mantiene la proporción original de la imagen */
+    object-fit: contain; /* Evita que la imagen se distorsione */
 }
 
 nav ul {
@@ -312,4 +319,24 @@ footer p {
 
 .btn_inspeccion:active {
   transform: scale(0.98);
+}
+
+/* Estilo para la imagen del banner */
+.banner-img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    
+    /* 1. Controla qué parte de la imagen se muestra */
+    object-position: center bottom; /* O usa porcentajes como: 20% 50% */
+
+    border-radius: 8px;
+    margin: 15px 0 25px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Opcional: Estilo para el contenedor de bienvenida */
+.bienvenida {
+    text-align: center;
+    margin-bottom: 20px;
 }
